@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<center>
+
+<table style="width:50%">
+  <caption><h1>Reviews</h1></caption>
+  <tr>
+    <td>Name</th>
+    <td>Bike</th>
+  </tr>
+  {% for item in data %}
+  <tr>
+    <td>{{ item.Name }}</td>
+    <td>{{ item.Bike }}</td>
+  </tr>
+{% endfor %}
+ 
+</table>
+</center>
+</body>
+</html>

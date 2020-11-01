@@ -1,0 +1,27 @@
+<head>
+    <title>Create a Post</title>
+<style>
+body {
+  background-image: url('https://i.ytimg.com/vi/fsWLAPvepE4/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+</head>
+    
+    <body><center>
+    <h1>Bikes Zone</h1>
+    <form action="" method="GET">
+        {%csrf_token%}
+        Name: <input type="text" name="nn"/><br/>
+        <br/>
+        Bike: <input type="text" name="bb"/><br/>
+        <br/>
+        <input type="submit" value="Post"/>
+    </form></center>
+    </body>
+    
+</html>
+    
